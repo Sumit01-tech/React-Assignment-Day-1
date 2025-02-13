@@ -1,0 +1,1 @@
+let root = ReactDOM.createRoot(document.querySelector("#root")).render(<h1>Hello, JSX!</h1>);

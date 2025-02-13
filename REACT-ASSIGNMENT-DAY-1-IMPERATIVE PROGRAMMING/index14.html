@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vanilla JS DOM Manipulation</title>
+</head>
+<body>
+  <h1 id="title">Original Title</h1>
+  <button id="changeTitleBtn">Change Title (Vanilla JS)</button>
+  <p>DOM Updates: <span id="updateCount">0</span></p>
+
+  <script>
+    let updateCount = 0;
+    document.getElementById('changeTitleBtn').addEventListener('click', () => {
+      document.getElementById('title').textContent = 'Title Changed by Vanilla JS';
+      updateCount++;
+      document.getElementById('updateCount').textContent = updateCount;
+    });
+  </script>
+</body>
+</html>
+<script src="index14.js"></script>
